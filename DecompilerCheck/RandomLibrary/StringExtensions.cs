@@ -8,6 +8,12 @@ namespace RandomLibrary
 {
     public static class StringExtensions
     {
+        /// <summary>
+        /// Generates a Sequence of Random Strings from a seed string.
+        /// </summary>
+        /// <param name="charColl">The seed string for characters</param>
+        /// <param name="strLen">The length of the random string</param>
+        /// <returns>Sequence of Random Strings from a seed string.</returns>
         public static IEnumerable<string> GenerateRandStringSeq(this string charColl, int strLen)
         {
             var rand = new Random();
